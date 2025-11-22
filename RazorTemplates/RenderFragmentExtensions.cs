@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components.Web;
-using RazorFun.lib;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using RazorTemplates;
 
 namespace Microsoft.AspNetCore.Components;
 

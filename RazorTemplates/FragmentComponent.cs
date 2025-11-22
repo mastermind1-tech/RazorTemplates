@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Rendering;
 
-namespace RazorFun.lib;
+namespace RazorTemplates;
 
 internal class FragmentComponent : ComponentBase
 {

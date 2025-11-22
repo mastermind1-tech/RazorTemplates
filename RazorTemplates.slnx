@@ -1,3 +1,5 @@
 <Solution>
   <Project Path="RazorFun/RazorFun.csproj" />
+  <Project Path="RazorProgramMain/RazorProgramMain.csproj" Id="cd1c6822-2e20-4073-b3f3-478bc91fc2eb" />
+  <Project Path="RazorTemplates/RazorTemplates.csproj" Id="9d23cdbd-45e2-4c68-8967-20e2e8153439" />
 </Solution>

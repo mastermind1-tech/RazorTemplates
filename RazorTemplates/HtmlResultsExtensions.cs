@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Http.HttpResults;
-using RazorFun.lib;
+using RazorTemplates;
 
 namespace Microsoft.AspNetCore.Http;
 
