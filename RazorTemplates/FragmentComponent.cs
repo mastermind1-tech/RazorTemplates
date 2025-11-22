@@ -13,36 +13,40 @@ internal class FragmentComponent : ComponentBase
         builder.AddContent(0, RenderFragment);
     }
 
-    public readonly struct ParametersDictionary(RenderFragment fragment)
+    public readonly struct ParametersDictionary(in RenderFragment fragment)
         : IReadOnlyDictionary<string, object?>, IDictionary<string, object?>
     {
-        private static readonly IEnumerable<string> _keys = [nameof(FragmentComponent.RenderFragment)];
+        private static readonly ICollection<string> _keys = [nameof(RenderFragment)];
+
         private readonly RenderFragment _fragment = fragment;
 
-        public object? this[string key] => key == nameof(FragmentComponent.RenderFragment) ? _fragment : null;
         public IEnumerable<string> Keys => _keys;
-        public IEnumerable<object?> Values => [_fragment];
+        public IEnumerable<object?> Values => throw new NotSupportedException();
+        public object? this[string key] => key == nameof(RenderFragment) ? _fragment : null;
         public int Count => 1;
 
-        ICollection<string> IDictionary<string, object?>.Keys => [.. _keys];
-        ICollection<object?> IDictionary<string, object?>.Values => [_fragment];
+        ICollection<string> IDictionary<string, object?>.Keys => _keys;
+        ICollection<object?> IDictionary<string, object?>.Values => throw new NotSupportedException();
         public bool IsReadOnly => true;
 
         object? IDictionary<string, object?>.this[string key]
         {
             get => this[key];
-            set => throw new NotImplementedException();
+            set => throw new NotSupportedException();
         }
 
-        public bool ContainsKey(string key) => key == nameof(FragmentComponent.RenderFragment);
+        public bool ContainsKey(string key) => key == nameof(RenderFragment);
+
         public IEnumerator<KeyValuePair<string, object?>> GetEnumerator()
         {
-            yield return new KeyValuePair<string, object?>(nameof(FragmentComponent.RenderFragment), _fragment);
+            yield return new(nameof(RenderFragment), _fragment);
         }
+
         System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() => GetEnumerator();
+
         public bool TryGetValue(string key, out object? value)
         {
-            if (key == nameof(FragmentComponent.RenderFragment))
+            if (key == nameof(RenderFragment))
             {
                 value = _fragment;
                 return true;
@@ -51,39 +55,18 @@ internal class FragmentComponent : ComponentBase
             return false;
         }
 
-        public void Add(string key, object? value)
-        {
-            throw new NotImplementedException();
-        }
+        public void Add(string key, object? value) => throw new NotSupportedException();
 
-        public bool Remove(string key)
-        {
-            throw new NotImplementedException();
-        }
+        public bool Remove(string key) => throw new NotSupportedException();
 
-        public void Add(KeyValuePair<string, object?> item)
-        {
-            throw new NotImplementedException();
-        }
+        public void Add(KeyValuePair<string, object?> item) => throw new NotSupportedException();
 
-        public void Clear()
-        {
-            throw new NotImplementedException();
-        }
+        public void Clear() => throw new NotSupportedException();
 
-        public bool Contains(KeyValuePair<string, object?> item)
-        {
-            throw new NotImplementedException();
-        }
+        public bool Contains(KeyValuePair<string, object?> item) => throw new NotSupportedException();
 
-        public void CopyTo(KeyValuePair<string, object?>[] array, int arrayIndex)
-        {
-            throw new NotImplementedException();
-        }
+        public void CopyTo(KeyValuePair<string, object?>[] array, int arrayIndex) => throw new NotSupportedException();
 
-        public bool Remove(KeyValuePair<string, object?> item)
-        {
-            throw new NotImplementedException();
-        }
+        public bool Remove(KeyValuePair<string, object?> item) => throw new NotSupportedException();
     }
 }
