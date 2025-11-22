@@ -1,3 +1,3 @@
 # Razor Templates
 
-Experiment creating templating extensions for Razor Copmonents.
+Experiment creating templating extensions for Razor Components.
