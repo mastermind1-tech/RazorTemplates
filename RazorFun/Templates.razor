@@ -1,0 +1,18 @@
+﻿@code {
+    public static RenderFragment Home() =>
+    (
+        @<p>
+            Welcome to the RazorFun application!<br />
+            <a href="/string">Template rendered directly to a <code>string</code></a><br />
+            <a href="/iresult">Template rendered via <code>IResult</code></a>
+        </p>
+    );
+
+    public static RenderFragment RenderCard(User user) =>
+    (
+        @<div class="card">
+            <Header Text="@user.Name" />
+            <p>Age: @user.Age</p>
+        </div>
+    );
+}
