@@ -5,7 +5,7 @@
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "applicationUrl": "http://razorfun.dev.localhost:5024",
+      "applicationUrl": "http://razortemplates.dev.localhost:5024",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -14,7 +14,7 @@
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "applicationUrl": "https://razorfun.dev.localhost:7008;http://razorfun.dev.localhost:5024",
+      "applicationUrl": "https://razortemplates.dev.localhost:7008;http://razortemplates.dev.localhost:5024",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

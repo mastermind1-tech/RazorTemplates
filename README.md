@@ -1,2 +1,3 @@
-# RazorTemplates
-Experiment creating templating extensions for Razor Copmonents
+# Razor Templates
+
+Experiment creating templating extensions for Razor Copmonents.
